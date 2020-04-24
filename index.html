@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+<body>
+    <form action="" method="post">
+        <select name="select" id="select">
+            <option value="name">Name</option>
+            <option value="gender">Gender</option>
+            <option value="age">Age</option>
+        </select>
+        <span>
+            <select name="select" id="selectGender" class="hide">
+                <option value="all">All</option>
+                <option value="male">Male</option>
+                <option value="fmale">Fmale</option>
+            </select>
+            <select name="select" id="selectAge" class="hide">
+                <option value="all">All</option>
+                <option value="1">18+</option>
+                <option value="0">18-</option>
+            </select>
+            <input type="text" name="name" placeholder=" Thuan" id="selectName" class="show">
+            <p id="s"></p>
+        </span>
+        <button id="create">Thêm mới</button>
+    </form>
+    
+    <form action="" method="post" class="create">
+        <input type="text" name="name" placeholder="Thuan" class="name" required>
+        <input type="number" name="age" placeholder="20" class="age" required>
+        <select name="gender" class="gender">
+            <option value="male">Male</option>
+            <option value="fmale">Fmale</option>
+        </select>
+        <input type="number" name="point" placeholder="8" class="point" required>
+        <button id="create-per">Thêm Mới</button>
+    </form>
+    
+    
+    <h2>Bảng DS</h2>
+    <table style="width:100%;text-align: center;" >
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Point</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+            
+        </tbody>
+    </table>
+
+    <h3 id="point">Tổng Point là : </h3>
+    <span class="bg"></span>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

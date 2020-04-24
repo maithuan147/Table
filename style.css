@@ -1,0 +1,56 @@
+.hide{
+    display: none;
+}
+.show{
+    display: initial;
+}
+.create{
+    display: none;
+}
+#create{
+    position: absolute;
+    top: 8px;
+    right: 232px;
+    background: aqua;
+}
+.edit{
+    background: green;
+}
+.delete{
+    background: red;
+}
+.create.show{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: aliceblue;
+    width: 300px;
+    text-align: center;
+}
+.create input{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+
+}
+.create select{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+}
+.bg.show{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#create-per{
+    margin-bottom: 10px;
+}
